@@ -1,0 +1,8 @@
+@mixin post-components__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@mixin post-components__margin {
+  margin-top: 20px;
+}

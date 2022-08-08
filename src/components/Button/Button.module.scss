@@ -1,0 +1,25 @@
+.button {
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dfe2df;
+  background: none;
+  outline: none;
+
+  transition: all 0.4s;
+
+  cursor: pointer;
+
+  &:disabled,
+  &:disabled:hover {
+    color: #dfe2df;
+    border-color: #dfe2df;
+    background-color: transparent;
+    cursor: auto;
+  }
+
+  &:hover {
+    background-color: #0b76ef;
+    color: #fff;
+  }
+}

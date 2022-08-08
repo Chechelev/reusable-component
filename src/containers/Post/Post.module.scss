@@ -1,0 +1,40 @@
+@import '../../styles/mixins.scss';
+
+.post {
+  width: 350px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.text {
+  &__wrapper {
+    @include post-components__wrapper;
+    @include post-components__margin;
+  }
+}
+
+.inputs {
+  &__wrapper {
+    @include post-components__wrapper;
+    @include post-components__margin;
+  }
+}
+
+.button {
+  &__wrapper {
+    @include post-components__margin;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+  }
+}
